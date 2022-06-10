@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  outline:transparent;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  cursor: url("../images/cursor-arrow.png"),auto;
+}
+.container {
+  width: 1240px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.card-group {
+  display: flex;
+  padding: 20px;
+  background-color: #F7CE76;
+}
+.card-group .card {
+  width: 40%;
+  padding: 20px;  
+  background-color: #F2F2F2;
+}
+.card-group .card .add-card {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.card-group .card .add-card .title {
+  font-size: 25px;
+  font-weight: 700;
+  color:#666A72 ;
+}
+.card-group .card .add-card .btn {
+border: 0;
+width: 30px;
+height: 30px;
+border-radius: 20px;
+font-size: 25px;
+}
+.card-group .card .add-card .btn:hover {
+box-shadow: 2px 2px 15px 1px #a3a1a1;
+}
+.card-group .card .user-cards .card-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.card-group .card .user-cards .card-list .card-item .card-link .user-card {
+  background-color: #a3a1a1;
+  width: 315px;
+  height: 199px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: 3px solid transparent;
+  border-radius: 13px;
+  margin-bottom: 20px;
+}
+.card-group .card .user-cards .card-list .card-item .card-link:focus .user-card {
+border: 3px solid #0000ff;
+box-shadow: 5px 5px 10px 5px #a3a1a1;
+}
+.card-group .card .user-cards .card-list .card-item .card-link .user-card:hover {
+  box-shadow: 5px 5px 10px 5px #a3a1a1;
+}
+.card-group .card .user-cards .card-list .card-item .card-link .user-card-1 {
+background-image: url("../images/f96946e6a96d0db61d0a76b34a3486c2.png");
+}
+.card-group .card .user-cards .card-list .card-item .card-link .user-card-2 {
+background-image: url("../images/HUMO.png");
+}
+.card-group .card .user-cards .card-list .card-item .card-link .user-card-3 {
+  background-image: url("../images/UnionPay-Gold.png");
+
+}
+.card-group .add-sum {
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+}
+.card-group .add-sum .carrent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #666A72;
+}
+.card-group .add-sum .carrent .title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #666A72;
+}
+.card-group .add-sum .carrent .sum {
+  font-size: 22px;
+  font-weight: bolder;
+  color: #000;
+ display: flex;
+
+}
+.card-group .add-sum .carrent .sum .res {
+border: 0;
+background-color: transparent;
+font-size: 22px;
+font-weight: bolder;
+color: #000;
+}
+.card-group .add-sum .list {
+  margin-top: 70px;
+  list-style:none;
+}
+.card-group .add-sum .list .list-item .input {
+display: none;
+}
+.card-group .add-sum .list .list-item .check {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: url("../images/computer-mouse-cursor-pointer-thumb-computer-icons-png-favpng-tfzT3TwnPfJ1bLb26cdwzQhhb.jpg"), auto;
+}
+.card-group .add-sum .list .list-item .check .checked {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url("../images/minus-sign.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F2F2F2;
+  background-size: 15px;
+  margin-right: 30px;
+  transition: all 0.3s linear;
+  
+}
+.card-group .add-sum .list .list-item .input:checked + .check .checked {
+  background-image: url("../images/plus.png");
+}
+.card-group .add-sum .list .list-item .check .title {
+  font-weight: bolder;
+  font-size: 22px;
+  margin: 0;
+}
+.card-group .add-sum .list .list-item .check .text {
+  margin: 10px 0px 0 0;
+  color:#666A72;
+}
+.card-group .add-sum .list .list-item .check .sum  {
+  margin-left: 25%;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.card-group .add-sum .list .list-item .check .sum input  {
+border: 0;
+background-color: transparent;
+font-weight: bolder;
+font-size: 22px;
+width: 50px;
+color: #0000ff;
+}
+.card-group .add-sum .list .list-item .check .sum .number {
+color: #0000ff;
+}
+.card-group .add-sum .list .list-item .check:hover {
+  box-shadow: 5px 5px 10px 5px #a3a1a1;
+}
+.card-group .add-sum .list .list-item input:checked + .check .sum .number input {
+  color: #0a940a;
+}
+.card-group .add-sum .list .list-item input:checked + .check .sum .number {
+  color: #0a940a;
+}
+.card-group .add-sum .list .list-item input:checked + .check  {
+  box-shadow: 5px 5px 10px 5px #a3a1a1;
+}
+.card-group .add-sum .btn-group {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.card-group .add-sum .btn-group .btn {
+  padding: 8px;
+  margin-right: 20px;
+  border: 1px solid #0000ff;
+  color: #0000ff;
+  border-radius: 20px;
+  cursor: pointer;
+}

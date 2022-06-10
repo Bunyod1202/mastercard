@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="container">
+        <div class="card-group">
+          <div class="card">
+            <div class="add-card">
+              <h1 class="title">My Waillets</h1> <button class="btn" type="button">+</button>
+            </div>
+            <div class="user-cards">
+              <ul class="card-list">
+                <li class="card-item">
+                  <a class="card-link" href="#">
+                    <div class="user-card user-card-1"></div>
+                  </a>
+                </li>
+                <li class="card-item">
+                  <a class="card-link" href="#">
+                    <div class="user-card user-card-2"></div>
+                  </a>
+                </li>
+                <li class="card-item">
+                  <a class="card-link" href="#">
+                    <div class="user-card user-card-3"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="add-sum">
+            <div class="carrent">
+              <h2 class="title">Current Balance</h2>
+              <div class="sum">$ <div class="res" id="res"></div>.<sup>00</sup></div>
+            </div>
+            <ul class="list">
+              <li class="list-item">
+                <label >
+                  <input type="checkbox" onclick="addSum1()" class="input"  name="switch" >
+                  <div class="check">
+                  <div class="checked"></div>
+                  <div>
+                    <h3 class="title">Apple iPhone 7,128 GB</h3>
+                    <p class="text">Electronics #3234324 - 12 July 2015</p>
+                  </div>
+                  <div class="sum">
+                    <p class="number">$<input type="text" id="one1" value="620">.<sup>00</sup></p>
+                  </div>
+                </div>
+                </label>
+              </li>   <li class="list-item">
+                <label >
+                  <input type="checkbox" onclick="addSum2()" class="input"  name="switch" >
+                  <div class="check">
+                  <div class="checked"></div>
+                  <div>
+                    <h3 class="title">Apple iPhone 7,128 GB</h3>
+                    <p class="text">Electronics #3234324 - 12 July 2015</p>
+                  </div>
+                  <div class="sum">
+                    <p class="number">$<input type="text" id="one2" value="660">.<sup>00</sup></p>
+                  </div>
+                </div>
+                </label>
+              </li>   <li class="list-item">
+                <label >
+                  <input type="checkbox"  onclick="addSum3()" class="input"  name="switch" >
+                  <div class="check">
+                  <div class="checked"></div>
+                  <div>
+                    <h3 class="title">Apple iPhone 7,128 GB</h3>
+                    <p class="text">Electronics #3234324 - 12 July 2015</p>
+                  </div>
+                  <div class="sum">
+                    <p class="number">$<input type="text" id="one3" value="650">.<sup>00</sup></p>
+                  </div>
+                </div>
+                </label>
+              </li>   <li class="list-item">
+                <label >
+                  <input type="checkbox"  onclick="addSum4()" class="input"  name="switch" >
+                  <div class="check">
+                  <div class="checked"></div>
+                  <div>
+                    <h3 class="title">Apple iPhone 7,128 GB</h3>
+                    <p class="text">Electronics #3234324 - 12 July 2015</p>
+                  </div>
+                  <div class="sum">
+                    <p class="number">$ <input type="text" id="one4" value="700">.<sup>00</sup></p>
+                  </div>
+                </div>
+                </label>
+              </li>     
+            </ul>
+            <div class="btn-group">
+              <button type="button" class="btn">Cancle The Order</button>
+              <button type="submit" class="btn">Place An Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    
+    let one1 = parseInt(document.getElementById('one1').value);
+    let one2 = parseInt(document.getElementById('one2').value);
+    let one3 = parseInt(document.getElementById('one3').value);
+    let one4 = parseInt(document.getElementById('one4').value);
+    function addSum1() {
+     document.getElementById("res").innerHTML=+one1;
+     setTimeout(()=> {
+      document.getElementById("res").innerHTML=000;
+     },5000)
+    };
+    function addSum2() {
+     document.getElementById("res").innerHTML=+one2;
+     setTimeout(()=> {
+      document.getElementById("res").innerHTML=000;
+     },5000)
+    };  
+    function addSum3() {
+     document.getElementById("res").innerHTML=+one3;
+     setTimeout(()=> {
+      document.getElementById("res").innerHTML=000;
+     },5000)
+    };   
+    function addSum4() {
+     document.getElementById("res").innerHTML=+one4;
+     setTimeout(()=> {
+      document.getElementById("res").innerHTML=000;
+     },5000)
+    };
+  </script>
+</body>
+
+</html>
